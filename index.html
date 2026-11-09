@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qimah | Baby Clothing Store</title>
+  <meta name="description" content="Premium baby outfits and accessories. Soft, safe fabrics delivered to your door." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="extra.css" />
+</head>
+
+<body>
+
+  <header class="site-header" id="site-header"></header>
+  <aside id="cart-panel" class="cart-panel" aria-label="Shopping cart"></aside>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Style, comfort and love for your little ones</h1>
+        <p class="lead">
+          Beautiful outfits in premium fabrics, and everything your baby needs in one place.
+        </p>
+
+        <div class="hero-actions">
+          <a href="shop.html" class="btn btn-solid">Shop now</a>
+          <a href="#categories" class="btn btn-outline">Explore collection</a>
+        </div>
+
+        <ul class="assurances">
+          <li><strong>Premium quality</strong><span>Soft, safe and durable</span></li>
+          <li><strong>Fast delivery</strong><span>Straight to your door</span></li>
+          <li><strong>Trusted by parents</strong><span>Loved by thousands</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-media">
+        <img src="OSEWE6659.JPG" alt="Baby wearing a Qimah outfit" />
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <h2 class="section-title">Shop by category</h2>
+
+      <div class="category-grid">
+        <a href="shop.html?category=boys" class="category-card">
+          <img src="IMG_E3553.JPG" alt="Baby boys outfits" loading="lazy" />
+          <span class="category-label">Baby boys</span>
+        </a>
+
+        <a href="shop.html?category=girls" class="category-card">
+          <img src="IMG_E3558.JPG" alt="Baby girls outfits" loading="lazy" />
+          <span class="category-label">Baby girls</span>
+        </a>
+
+        <a href="shop.html?category=new" class="category-card">
+          <img src="IMG_3565.PNG" alt="New arrivals" loading="lazy" />
+          <span class="category-label">New arrivals</span>
+        </a>
+
+        <a href="shop.html?category=accessories" class="category-card">
+          <img src="IMG_3567.JPG" alt="Baby accessories" loading="lazy" />
+          <span class="category-label">Accessories</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="section-head">
+        <h2 class="section-title">Featured products</h2>
+        <div class="row-controls">
+          <a href="shop.html" class="link-more">View all</a>
+          <button id="row-prev" class="row-arrow" aria-label="Scroll left">&lsaquo;</button>
+          <button id="row-next" class="row-arrow" aria-label="Scroll right">&rsaquo;</button>
+        </div>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="boys">Boys</button>
+        <button class="filter-btn" data-filter="girls">Girls</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+      </div>
+
+      <div class="product-row" id="product-list"></div>
+    </section>
+
+    <section class="section why">
+      <h2 class="section-title">Why choose us</h2>
+
+      <div class="why-top">
+        <p class="why-intro">
+          Your little one deserves the best. We offer a carefully curated selection of stylish,
+          comfortable clothing, made from soft, durable fabrics that are gentle on your baby's skin.
+        </p>
+        <div class="why-photo">
+          <img src="IMG_E3558.JPG" alt="Baby dressed in a Qimah outfit" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="why-grid">
+        <div>
+          <h3>Gentle fabrics</h3>
+          <p>Soft on skin and built to last through every wash.</p>
+        </div>
+        <div>
+          <h3>Sizes for every stage</h3>
+          <p>A wide range of designs to suit every occasion.</p>
+        </div>
+        <div>
+          <h3>Easy, reliable shopping</h3>
+          <p>Quality, safety and customer care come first.</p>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="about.html" class="btn btn-outline">Our story</a>
+        <a href="contact.html" class="btn btn-solid">Talk to us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | Qimah</title>
+  <meta name="description" content="Shop premium baby outfits and accessories from Qimah." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="extra.css" />
+</head>
+
+<body>
+  <header class="site-header" id="site-header"></header>
+  <aside id="cart-panel" class="cart-panel" aria-label="Shopping cart"></aside>
+
+  <div class="page-head">
+    <h1>Shop</h1>
+    <p>Premium outfits and accessories in soft, safe fabrics.</p>
+  </div>
+
+  <main class="section">
+    <div class="filters">
+      <button class="filter-btn is-active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="new">New arrivals</button>
+      <button class="filter-btn" data-filter="boys">Boys</button>
+      <button class="filter-btn" data-filter="girls">Girls</button>
+      <button class="filter-btn" data-filter="accessories">Accessories</button>
+    </div>
+
+    <div class="product-grid" id="product-list"></div>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+</html>

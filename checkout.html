@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | Qimah</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="extra.css" />
+</head>
+
+<body>
+  <header class="site-header" id="site-header"></header>
+  <aside id="cart-panel" class="cart-panel" aria-label="Shopping cart"></aside>
+
+  <div class="page-head">
+    <h1>Checkout</h1>
+    <p>Check your order, add your delivery details and send it to us on WhatsApp.</p>
+  </div>
+
+  <main class="section">
+    <div class="two-col">
+
+      <div class="box">
+        <h2>Your order</h2>
+        <ul id="order-summary" class="cart-items"></ul>
+        <div class="order-total"><span>Total</span><strong id="order-total">&#8358;0</strong></div>
+      </div>
+
+      <div class="box" id="checkout-box">
+        <h2>Delivery details</h2>
+        <form id="checkout-form" class="form">
+          <label>Full name
+            <input type="text" name="fullname" required />
+          </label>
+          <label>Phone number
+            <input type="tel" name="phone" required />
+          </label>
+          <label>Delivery address
+            <textarea name="address" rows="3" required></textarea>
+          </label>
+          <label>Note (optional)
+            <input type="text" name="note" placeholder="Sizes, colours, delivery time..." />
+          </label>
+          <button type="submit" class="btn btn-solid">Place order on WhatsApp</button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+</html>
